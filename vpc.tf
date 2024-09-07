@@ -10,7 +10,7 @@ resource "aws_vpc" "vpc" {
   }
 }
 
-# Create Intrenet Gateay and Attach it to VPC
+# Create Intrenet Gateway and Attach it to VPC
 # Terraform aws create internet gateway
 resource "aws_internet_gateway" "internet-gateway" {
   vpc_id = aws_vpc.vpc.id
